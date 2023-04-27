@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;600;700&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="tlo"></div>
+    <section id="landing-page">
+        <div class="landing-page-container">
+            <img src="assets/logo.svg" alt="">
+            <div class="picker-container">
+                <h4>PICK PLAYER 1's MARK</h4>
+                <div class="picker">
+                    <div class="pick-slider">
+                        <img class="icon-x icon-slider" src="assets/icon-x.svg" alt="">
+                    </div>
+
+                    <div class="pick-slider">
+                        <img class=" icon-slider" src="assets/icon-o.svg" alt="">
+                    </div>
+                    <div class="pick-slider-slider">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img class="icon-o icon-slider" src="assets/icon-o.svg" alt="">
+
+                                </div>
+                                <div class="flip-box-back">
+                                    <img class="icon-o icon-slider" src="assets/icon-x.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <img class="icon-o icon-slider" src="assets/icon-o.svg" alt=""> -->
+
+                    </div>
+                </div>
+                <h5>REMEMBER : X GOES FIRST</h5>
+            </div>
+            <button class="btn-1 new-game-cpu"><a href="">NEW GAME (VS CPU)</a></button>
+            <button class="btn-2 new-game-player"><a href="">NEW GAME (VS PLAYER)</a></button>
+        </div>
+    </section>
+    <section id="board">
+        <div class="board-container">
+            <div class="board-header">
+                <div class="board-header-cell">
+                    <img src="assets/logo.svg" alt="">
+                </div>
+                <div class="board-header-cell">
+                    <div class="turn-sign">
+                        <img class="turn-sign-x" src="assets/icon-x.svg" alt="">
+                        <img class="turn-sign-o" src="assets/icon-o.svg" alt="">
+                        <h4>TURN</h4>
+                    </div>
+                </div>
+                <div class="board-header-cell">
+                    <div class="icon-restart">
+                        <img src="assets/icon-restart.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="board">
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+                <div class="field">
+                    <div class="field-symbol"></div>
+                    <div class="field-symbol-chosen"></div>
+                </div>
+            </div>
+            <div class="board-footer">
+                <div class="footer-cell footer-cell-x">
+                    <p>X<span class="p1">(YOU)</span></p>
+                    <h2><span class="score x-score">0</span></h2>
+                </div>
+                <div class="footer-cell footer-cell-ties">
+                    <p>TIES</p>
+                    <h2><span class="score ties-score">0</span></h2>
+                </div>
+                <div class="footer-cell footer-cell-o">
+                    <p>O<span class="p2">(CPU)</span></p>
+                    <h2><span class="score o-score">0</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ending-stripe ending-stripe-1">
+        <h4 class="ending-message">OH NO YOU LOST</h4>
+        <div class="display-inline">
+            <div class="win-symbol"></div>
+            <h1 class="win-message">TAKES THE ROUND</h1>
+        </div>
+        <div>
+            <button class="btn-3 quit-btn">QUIT</button>
+            <button class="btn-4 next-round-btn">NEXT ROUND</button>
+        </div>
+    </section>
+    <section class="ending-stripe ending-stripe-2">
+        <h1 class="win-message">RESTART GAME?</h1>
+        <div>
+            <button class="btn-3">NO, CANCEL</button>
+            <button class="btn-4 restart-btn">YES, RESTART</button>
+        </div>
+    </section>
+    <section class="ending-stripe ending-stripe-tied">
+        <h1 class="win-message">ROUND-TIED</h1>
+        <div>
+            <button class="btn-3 quit-btn">QUIT</button>
+            <button class="btn-4 next-round-btn">NEXT ROUND</button>
+        </div>
+    </section>
+    <div class="obrotowiec">
+        <div class="obrotowiec-element"><img src="assets/icon-o.svg" alt=""></div>
+        <div class="obrotowiec-element"><img src="assets/icon-x.svg" alt=""></div>
+        <div class="obrotowiec-element"><img src="assets/icon-o.svg" alt=""></div>
+        <div class="obrotowiec-element"><img src="assets/icon-x.svg" alt=""></div>
+    </div>
+    <div class="obrotowiec obrotowiec-2">
+        <div class="obrotowiec-element oe2"><img src="assets/icon-o.svg" alt=""></div>
+        <div class="obrotowiec-element oe2"><img src="assets/icon-x.svg" alt=""></div>
+        <div class="obrotowiec-element oe2"><img src="assets/icon-o.svg" alt=""></div>
+        <div class="obrotowiec-element oe2"><img src="assets/icon-x.svg" alt=""></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
